@@ -9,7 +9,7 @@ public class TrumpetTest {
 
   @Before
   public void before() {
-    trumpet = new Trumpet("Brass", "White", "Brass", 3);
+    trumpet = new Trumpet("Vincent Bach", "Brass", "White", "Brass", 345, 789, 3);
   }
 
   @Test
@@ -25,6 +25,16 @@ public class TrumpetTest {
   @Test
   public void hasInsturmentSound(){
     assertEquals("Toot Toot Toot!!!", trumpet.instrumentSound());
+  }
+
+  @Test
+  public void hasDescription(){
+    assertEquals("Vincent Bach", trumpet.description());
+  }
+
+  @Test
+  public void hasCalculateMarkUp(){
+    assertEquals(444, trumpet.calculateMarkup());
   }
 
 }

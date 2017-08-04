@@ -8,7 +8,7 @@ public class PianoTest {
 
   @Before
   public void before() {
-    piano = new Piano("Oak", "Black", "percussion", 88);
+    piano = new Piano("Steinway", "Oak", "Black", "percussion", 1123, 2300, 88);
   }
 
   @Test
@@ -24,5 +24,15 @@ public class PianoTest {
   @Test
   public void hasInstrumentSound(){
     assertEquals("tinkle, tinkle, tinkle!", piano.instrumentSound());
+  }
+
+  @Test
+  public void hasDescription(){
+    assertEquals("Steinway", piano.description());
+  }
+
+  @Test
+  public void hasCalculateMarkUp(){
+    assertEquals(1177, piano.calculateMarkup());
   }
 }
