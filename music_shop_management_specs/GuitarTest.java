@@ -8,6 +8,21 @@ public class GuitarTest {
 
   @Before
   public void before() {
-    this.guitar = new Guitar();
+    guitar = new Guitar("Cedar", "Brown", "String", 6);
+  }
+
+  @Test
+  public void noOfStrings(){
+    assertEquals(6, guitar.noOfStrings());
+  }
+  
+  @Test
+  public void hasInstrumentMaterial(){
+    assertEquals("Cedar", guitar.instrumentMaterial());
+  }
+
+  @Test
+  public void hasInstrumentSound(){
+    assertEquals("Strummmmm", guitar.instrumentSound());
   }
 }

@@ -15,7 +15,10 @@ public String instrumentSound(){
   return "Toot Toot Toot!!!";
 }
 
-public int getnoOfValaves(){
+public int noOfValves(){
   return this.noOfValves;
+}
+public String instrumentMaterial(){
+  return this.instrumentMaterial;
 }
 }

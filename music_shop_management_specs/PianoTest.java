@@ -8,6 +8,21 @@ public class PianoTest {
 
   @Before
   public void before() {
-    piano = new Piano();
+    piano = new Piano("Oak", "Black", "percussion", 88);
+  }
+
+  @Test
+  public void noOfKeys(){
+    assertEquals(88, piano.noOfKeys());
+  }
+  
+  @Test
+  public void hasInstrumentMaterial(){
+    assertEquals("Oak", piano.instrumentMaterial());
+  }
+
+  @Test
+  public void hasInstrumentSound(){
+    assertEquals("tinkle, tinkle, tinkle!", piano.instrumentSound());
   }
 }

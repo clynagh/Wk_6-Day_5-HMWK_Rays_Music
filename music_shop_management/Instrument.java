@@ -1,6 +1,7 @@
 package music_shop_management;
 
 public abstract class Instrument {
+
   String instrumentMaterial;
   String instrumentColour;
   String instrumentType;
@@ -9,7 +10,6 @@ public abstract class Instrument {
     this.instrumentMaterial = instrumentMaterial;
     this.instrumentColour = instrumentColour;
     this.instrumentType = instrumentType;
-
   }
 
   public String getInstrumentMaterial(){
@@ -24,3 +24,4 @@ public abstract class Instrument {
     return this.instrumentType;
   }
 }
+

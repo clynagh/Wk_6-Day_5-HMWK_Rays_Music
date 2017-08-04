@@ -14,17 +14,17 @@ public class TrumpetTest {
 
   @Test
   public void noOfValves(){
-    assertEquals(3, trumpet.getnoOfValaves());
+    assertEquals(3, trumpet.noOfValves());
   }
 
   @Test
   public void hasInstrumentMaterial(){
-    assertEquals("Brass", trumpet.getInstrumentMaterial());
+    assertEquals("Brass", trumpet.instrumentMaterial());
   }
 
-  @Override
+  @Test
   public void hasInsturmentSound(){
-    assertEquals("Toot Toot Toot!!!", trumpet.hasInsturmentSound());
+    assertEquals("Toot Toot Toot!!!", trumpet.instrumentSound());
   }
 
 }
