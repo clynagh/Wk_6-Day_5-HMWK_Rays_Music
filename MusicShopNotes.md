@@ -16,7 +16,7 @@ You will need to:
 
 <!-- Create an Instrument superclass which contains attributes you see as being common to all instruments e.g. material it is made from, colour, type (Brass, String, Woodwind, Keyboard etc). The classes created in step 2 above can then inherit from this Instruments class. -->
 
-Create a Sellable interface which has a calculateMarkup method, which returns an int/double, based on the buying price and the selling price.
+<!-- Create a Sellable interface which has a calculateMarkup method, which returns an int/double, based on the buying price and the selling price. -->
 
 Create classes for items the shop may sell, i.e. which implement the Sellable interface. Such items should have the following:
 
@@ -28,6 +28,7 @@ Some Sellable items will be musical instruments i.e. instruments can be both Pla
 Create a Shop class, which has a collection of Sellable items, called stock. In your shop you should be able to:
 add items to stock.
 remove items from stock.
+
 Possible Extensions
 
 Using the calculateMarkup method for each item in stock, create a method which gives the total potential profit for the shop.
